@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: 'Gilroy', sans-serif;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header{
+    padding: 20px 0;
+    border-bottom: solid 2px #aaaaaa;
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__title{
+        font-size: 42px;
+        font-weight: 700;
+    }
+
+}
+
+.file-uploader{
+
+    .file-uploader__input{
+        display: none;
+    }
+
+    .file-uploader__label{
+        font-size: 20px;
+        font-weight: 500;
+        color: #4b59ff;
+    }
+}
+
+.main{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-form{
+    background-color: #e6e6e6;
+    border-radius: 15px;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .main-form__title{
+        padding: 20px 30px;
+        font-size: 36px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .main-form__fields{
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .main-form__field{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-form__label{
+        font-size: 24px;
+        font-weight: 500;
+        padding-right: 10px;
+    }
+
+    .main-form__input{
+        background-color: #ffffff;
+        padding: 5px;
+    }
+
+    .main-form__input::placeholder{
+        color: #000000;
+        opacity: 0.6;
+    }
+    .main-form__input[required]{
+        border-left: double 1px #ff0000;
+    }
+
+    .main-form__references{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .main-form__reference-link{
+        font-size: 16px;
+        font-weight: 300;
+        color: #4b59ff;
+    }
+
+    .main-form__reference-text{
+        font-size: 16px;
+        font-weight: 300;
+        color: #141414FF;
+    }
+
+    .main-form__buttons{
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    }
+    .main-form__button-submit{
+        padding: 10px 20px;
+        background-color: #4b59ff;
+        border-radius: 10px;
+
+        font-size: 24px;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    .main-form__button{
+        padding: 10px 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+
+        font-size: 24px;
+        font-weight: 500;
+        color: #4b59ff;
+    }
+}
+
+
