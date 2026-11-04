@@ -59,10 +59,9 @@
 
 .advantages-card {
   font-family: 'Gilroy', sans-serif;
-
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
 
   @media (max-width: 992px) {
@@ -77,7 +76,7 @@
   &__title {
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 
     @media (max-width: 576px) {
       font-size: 22px;
@@ -92,7 +91,7 @@
     max-width: 285px;
     line-height: 1.85;
     opacity: 80%;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
 
     @media (max-width: 992px) {
       max-width: 100%;
@@ -101,7 +100,7 @@
     @media (max-width: 576px) {
       max-width: 320px;
       font-size: 14px;
-      margin-bottom: 16px;
+      padding-bottom: 16px;
       text-align: center;
     }
   }
@@ -123,17 +122,37 @@
 
     &:hover {
       opacity: 0.6;
+      color: variables.$color-brown-dark;
+
+      .advantages-card__arrow{
+        opacity: 0.6;
+        background-color: variables.$color-brown-dark;
+      }
     }
 
     &:active {
       opacity: 1;
-      color: #AD6510;
+      color: variables.$color-brown-dark;
+
+      .advantages-card__arrow{
+        opacity: 1;
+        background-color: variables.$color-brown-dark;
+      }
     }
+
+
   }
 
   &__arrow{
-    width: 48px;
-    height: 24px;
+    width: 37px;
+    height: 11px;
     padding-top: 4px;
+
+    display: inline-block;
+    margin: 0 auto;
+
+    -webkit-mask-image: url('../icons/arrow.svg');
+    mask-image: url('../icons/arrow.svg');
+    background-color: variables.$color-text-muted;
   }
 }
