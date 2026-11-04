@@ -42,8 +42,14 @@
       margin-bottom: 12px;
     }
   }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
 
-  &__caption {
+  &__label{
+    display: block;
     opacity: 80%;
     font-size: 24px;
     font-weight: 400;
@@ -51,7 +57,7 @@
     line-height: 1.6;
 
     max-width: 600px;
-    margin: 0 auto 50px auto;
+    margin: 0 auto;
 
     @media (max-width: 992px) {
       font-size: 20px;
@@ -63,7 +69,7 @@
     }
   }
 
-  &__search-form {
+  &__box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -89,7 +95,7 @@
     }
   }
 
-  &__search-input {
+  &__input {
     flex-grow: 1;
     color: variables.$color-pure-white;
     background: transparent;
@@ -102,17 +108,16 @@
     }
   }
 
-  &__search-input::placeholder {
+  &__input::placeholder {
     color: rgba(255, 255, 255, 0.6);
   }
 
-  &__search-button {
+  &__button {
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
     cursor: pointer;
-
 
     background-color: #E58411;
     border-radius: 50%;

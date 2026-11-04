@@ -37,7 +37,7 @@
   &__logo{
     font-size: 28px;
     font-weight: 700;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 
   &__description{
@@ -47,7 +47,6 @@
     line-height: 1.6;
     opacity: 80%;
   }
-
 
   &__nav-column{
     display: flex;
@@ -73,6 +72,11 @@
 
     &:hover{
       opacity: 0.8;
+      color: variables.$color-blue-light;
+    }
+
+    &:active{
+      color: variables.$color-grey-dark;
     }
   }
 
@@ -80,29 +84,54 @@
     display: grid;
     grid-template-columns: 20px 1fr;
     gap: 10px;
-    color: #1E2833;
+    color: variables.$color-blue-dark;
     transition: color 0.2s ease;
 
-    &:hover{
-      color: #213D5C;
+    &__icon{
+      display: inline-block;
+      margin: 0 auto;
+    }
 
-      path, circle{
-        fill: #213D5C;
+    .footer__icon-facebook{
+      width: 10px;
+      height: 20px;
+      -webkit-mask-image: url('../icons/facebook-logo.svg');
+      mask-image: url('../icons/facebook-logo.svg');
+      background-color: variables.$color-blue-dark;
+    }
+
+    .footer__icon-twitter{
+      width: 20px;
+      height: 16px;
+      -webkit-mask-image: url('../icons/twitter-logo.svg');
+      mask-image: url('../icons/twitter-logo.svg');
+      background-color: variables.$color-blue-dark;
+    }
+
+    .footer__icon-instagram{
+      width: 20px;
+      height: 20px;
+      -webkit-mask-image: url('../icons/instagram-logo.svg');
+      mask-image: url('../icons/instagram-logo.svg');
+      background-color: variables.$color-blue-dark;
+    }
+
+    &:hover{
+      color: variables.$color-blue-light;
+
+      .footer__icon-facebook, .footer__icon-twitter, .footer__icon-instagram{
+        background-color: variables.$color-blue-light;
+      }
+    }
+
+    &:active{
+      color: variables.$color-grey-dark;
+
+      .footer__icon-facebook, .footer__icon-twitter, .footer__icon-instagram{
+        background-color: variables.$color-grey-dark;
       }
     }
   }
-
-  &__nav-img{
-    margin: 0 auto;
-    width: auto;
-    height: 20px;
-
-    path, circle {
-      fill: #1E2833;
-      transition: fill 0.2s ease;
-    }
-  }
-
 
   &__legal{
     font-family: 'DM Sans', sans-serif;
@@ -130,6 +159,11 @@
 
     &:hover{
       opacity: 0.8;
+      color: variables.$color-blue-light;
+    }
+
+    &:active{
+      color: variables.$color-grey-dark;
     }
 
     @media (max-width: 768px) {
