@@ -3,6 +3,17 @@ const mockBooks = [
   { id: 1, title: 'Первая тестовая запись' },
   { id: 2, title: 'Вторая тестовая запись' },
 ]
+import { onMounted } from 'vue'
+import { fetchBooksList, fetchBook } from '@/api/books.api'
+
+onMounted(async () => {
+  const books = await fetchBooksList()
+  console.log('Книги:', books)
+
+  const bookDetails = await fetchBook(1)
+  console.log('Книга и комментарии:', bookDetails)
+})
+
 </script>
 
 <template>
