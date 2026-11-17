@@ -1,4 +1,5 @@
 import type {IBook} from "@/types/book.types";
+import type {IComm} from '@/types/comms.types'
 
 const BASE_URL = " http://48.102.249.95/api";
 
@@ -18,6 +19,6 @@ export function fetchBooksList() {
     return request<IBook[]>(`/books`)
 }
 
-export function fetchBook(bookId: number) {
-    return request<IBook[]>(`/books/${bookId}/comments`)
+export function fetchBookComments(bookId: number) {
+    return request<IComm[]>(`/books/${bookId}/comments`)
 }
