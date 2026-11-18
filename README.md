@@ -1,42 +1,35 @@
 # Понышев Владимир Сергеевич 454
 
-This template should help get you started developing with Vue 3 in Vite.
+# TogeWrite
 
-## Recommended IDE Setup
+Веб-приложение для чтения книг и обсуждения сюжета с поддержкой вложенного дерева
+комментариев по категориям (`Альтернативный сюжет`, `Правки`, `Лор и мир книги`, `Вопросы`).
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+## Требования для запуска
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Для локального запуска необходим установленный **Node.js** и пакетный менеджер **npm**.
 
-## Type Support for `.vue` Imports in TS
+---
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## Инструкция по запуску
 
-## Customize configuration
+1. **Клонируйте репозиторий и перейдите в папку проекта:**
+   ```bash
+   git clone <ссылка-на-репозиторий>
+   cd sprints4
+   ```
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+2. **Установите зависимости:**
+   ```bash
+   npm install
+   ```
 
-## Project Setup
+3. **Запустите сервер для разработки:**
+   ```bash
+   npm run dev
+   ```
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+4. **Откройте приложение в браузере:**
+   Перейдите по локальному адресу, который появится в терминале (обычно `http://localhost:5173`).
